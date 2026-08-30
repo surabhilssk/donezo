@@ -36,5 +36,5 @@ yarn-error.log*
 # Misc
 .DS_Store
 *.pem
-.CLAUDE.md
+CLAUDE.md
 .commandcode
