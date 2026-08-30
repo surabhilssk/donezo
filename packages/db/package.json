@@ -1,0 +1,28 @@
+{
+  "name": "db",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "exports": {
+    "./client": "./index.ts",
+    "./schema": "./schema.ts"
+  },
+  "scripts": {
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "drizzle-kit": "^1.0.0-rc.4",
+    "tsx": "^4.23.13"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
+    "dotenv": "^17.4.2",
+    "drizzle-orm": "^1.0.0-rc.4"
+  }
+}
